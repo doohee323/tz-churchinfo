@@ -6,7 +6,7 @@ export USER=vagrant  # for vagrant
 export PROJ_NAME=churchinfo
 export HOME_DIR=/home/$USER
 export PROJ_DIR=/vagrant
-export SRC_DIR=/vagrant/resources  # for vagrant
+export SRC_DIR=$PROJ_DIR/resources  # for vagrant
 
 sudo sh -c "echo '' >> $HOME_DIR/.bashrc"
 sudo sh -c "echo 'export PATH=$PATH:.' >> $HOME_DIR/.bashrc"
@@ -106,8 +106,6 @@ sudo a2ensite churchinfo.conf
 sudo a2enmod rewrite
 sudo a2enmod php5.6
 
-service apache2 restart
-
 ### [open firewalls] ############################################################################################################
 
 ### [install churchinfo] ############################################################################################################
@@ -146,6 +144,8 @@ sudo /etc/init.d/mysql restart
 #mysql -h localhost -P 3306 -u root -p
 
 sudo service php5.6-fpm restart
+
+sudo service apache2 restart
 
 #curl http://192.168.82.170
 

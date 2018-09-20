@@ -48,7 +48,6 @@ make an aws s3 bucket as churchinfo media repository.
 		cat ~/.ssh/newnation.pub
 		ssh -i ~/.ssh/newnation ubuntu@35.237.190.176 
 	 
-	#export GCP_KEY=11111111111111111111:1111111111111111111111111111111111111111
 	export PRIKEY=newnation
 	export GCP_IP_ADDRESS=35.237.190.176 
 ```
