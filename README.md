@@ -1,6 +1,6 @@
 # Run a Wordpress server on Vagrant / AWS / GCP 
 
-install a churchinfo server with ubuntu 16.04, MySQL, nginx, php 7.0. 
+install a churchinfo server with ubuntu 16.04, MySQL, apache2, php 5.6. 
 make an aws s3 bucket as churchinfo media repository.
 
 ## Run on Vagrant
@@ -86,7 +86,7 @@ make an aws s3 bucket as churchinfo media repository.
 -. working directory
 ```
 	/vagrant/churchinfo 
-	1 minuite after changing any resources under /vagrant/churchinfo, /usr/share/nginx/html will be synced.
+	1 minuite after changing any resources under /vagrant/churchinfo, /var/www/html will be synced.
 	
 	
 	Test account:
